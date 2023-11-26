@@ -58,6 +58,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--third-color);
 }
 
 ul {
@@ -173,8 +174,7 @@ nav {
     font-size: var(--navbar-text);
 }
 
-nav ul li p,
-nav ul li a {
+nav ul li p {
     color: var(--third-color);
 }
 
@@ -212,7 +212,6 @@ nav ul li a {
     font-size: var(--small-text);
 }
 
-.mobile-navbar li a,
 .mobile-navbar button {
     color: var(--third-color);
 }
@@ -241,7 +240,7 @@ nav ul li a {
     animation-name: floating;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    padding-right: 2rem;
+    padding-right: 5vw;
     width: 28vw;
 }
 
@@ -470,7 +469,7 @@ nav ul li a {
 }
 
 .newcomers_item:hover .buy {
-    transform: translate(-3.3rem, 0);
+    transform: translate(-3.8rem, 0);
 }
 
 .newcomers_item:hover .newcomers_img {
