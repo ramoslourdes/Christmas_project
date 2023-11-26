@@ -563,6 +563,10 @@ nav ul li p {
     right: 2rem;
 }
 
+.footer a {
+    color: var(--text-color);
+} 
+
 .copyright p {
     font-size: var(--smaller-text);
 }
@@ -825,7 +829,7 @@ nav ul li p {
     .footer_img_two {
         width: 5rem;
         top: 24rem;
-        right: 3rem;
+        left: 8rem;
     }
 
 }
