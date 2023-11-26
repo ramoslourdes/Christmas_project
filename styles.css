@@ -5,33 +5,25 @@
 :root {
 
     --main-color: #DB201F;
-    --second-color: #E3D4BF;
-    /* --third-color: rgb(231, 203, 188); */
-    /* --fort-color: rgb(158, 109, 77); */
+    --second-color: #082424;
+    --third-color: #E7CBBE;
     --fort-color: #082424;
-    --fifth-color: #082424;
-    --sixth-color: #082424;
 
-    --text-color: #131313;
-    --text-color-inv: #fefefe;
-    --green-color: rgb(0, 128, 0);
-    --red-color: rgb(220, 20, 60);
+    --text-color: #082424;
+    --text-light-color: #fefefe;
 
     --background-color: rgb(231, 203, 188);
-    --container-color: linear-gradient(to right, #000000, #131313);
 
     --font-family: 'Poppins', sans-serif;
     --text-h1: 5vw;
     --text-h2: 1.5vw;
     --text-h3: 1.2rem;
     --text-title: 1.5rem;
-    --big-text: 1.125rem;
     --navbar-text: 1.3rem;
     --normal-text: 1.25vw;
     --small-text: 0.75rem;
-    --smaller-text: 0.65rem;
 
-    --swiper-pagination-color: var(--fort-color);
+    --swiper-pagination-color: var(--second-color);
     --swiper-navigation-color: var(--background-color);
 }
 
@@ -42,39 +34,26 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
-    color: var(--sixth-color);
+    color: var(--text-color);
     scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
     width: 12px;
-    /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
     background: var(--fort-color);
-    /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--second-color);
-    /* color of the scroll thumb */
+    background-color: var(--third-color);
     border-radius: 20px;
-    /* roundness of the scroll thumb */
-    border: 3px solid var(--fort-color);
-    /* creates padding around scroll thumb */
+    border: 3px solid var(--third-color);
 }
 
 body {
-    background: var(--background-color);
-    /* background: var(--fifth-color); */
-}
-
-body {
-    /* ... */
-    background:
-        linear-gradient(to right, var(--background-color), transparent),
-        url(https://grainy-gradients.vercel.app/noise.svg);
+    background:linear-gradient(to right, var(--background-color), transparent), url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
 a {
@@ -105,13 +84,12 @@ input {
     border-radius: 1rem;
     font-size: var(--navbar-text);
     cursor: pointer;
-    color: var(--background-color);
+    color: var(--third-color);
     transition: all 0.5s ease;
 }
 
 .button:hover {
     background-color: var(--fort-color);
-    color: var(--background-color);
 }
 
 .big_button {
@@ -120,15 +98,14 @@ input {
 
 .secondary_button {
     background-color: transparent;
-    border: 2px solid var(--background-color);
+    border: 2px solid var(--third-color);
     border-radius: 2rem;
-    color: var(--background-color);
+    color: var(--third-color);
 }
 
 .secondary_button:hover {
     border: 2px solid var(--main-color);
     background-color: var(--main-color);
-    color: var(--fort-color);
 }
 
 /* text */
@@ -192,13 +169,13 @@ nav {
     justify-content: space-around;
     padding: 2vh;
     align-items: center;
-    background-color: var(--fort-color);
+    background-color: var(--second-color);
     font-size: var(--navbar-text);
 }
 
 nav ul li p,
 nav ul li a {
-    color: var(--second-color);
+    color: var(--third-color);
 }
 
 .menubar {
@@ -214,11 +191,11 @@ nav ul li a {
 }
 
 .burguer-bar i {
-    color: var(--background-color);
+    color: var(--third-color);
 }
 
 #nav-burguer {
-    background-color: var(--fort-color);
+    background-color: var(--second-color);
     flex-direction: column;
     justify-content: center;
     display: none;
@@ -237,7 +214,7 @@ nav ul li a {
 
 .mobile-navbar li a,
 .mobile-navbar button {
-    color: var(--background-color);
+    color: var(--third-color);
 }
 
 
@@ -331,7 +308,7 @@ nav ul li a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 .about_text {
@@ -363,7 +340,7 @@ nav ul li a {
 .christmas_gift {
     display: flex;
     flex-direction: column;
-    background: var(--fifth-color);
+    background: var(--second-color);
     border-radius: 2rem;
     margin: 1.5rem;
     padding: 0.5rem;
@@ -393,7 +370,7 @@ nav ul li a {
 }
 
 .christmas_gift p {
-    color: var(--second-color);
+    color: var(--text-light-color);
 }
 
 .christmas_img {
@@ -426,7 +403,7 @@ nav ul li a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: var(--fort-color);
+    background: var(--second-color);
     width: 60%;
     border-radius: 2rem;
 }
@@ -438,7 +415,7 @@ nav ul li a {
 }
 
 .discount:hover .discount_img {
-    transform: translate(-1rem, 0);
+    transform: translate(0, -1rem);
 }
 
 .discount_text {
@@ -447,7 +424,7 @@ nav ul li a {
 
 .discount_text p {
     padding: 4vh 4vw;
-    color: var(--background-color);
+    color: var(--text-light-color);
 }
 
 
@@ -465,7 +442,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--fort-color);
+    background: var(--second-color);
     width: 100%;
     margin: 1rem auto;
     border-radius: 2rem;
@@ -484,7 +461,7 @@ nav ul li a {
     border-radius: 0.5rem;
     width: 3rem;
     height: 2rem;
-    color: var(--second-color);
+    color: var(--third-color);
     background-color: var(--main-color);
     position: absolute;
     font-size: var(--small-text);
@@ -501,7 +478,7 @@ nav ul li a {
 }
 
 .newcomers_item p {
-    color: var(--text-color-inv);
+    color: var(--text-light-color);
 }
 
 .newcomers_img {
@@ -524,25 +501,12 @@ nav ul li a {
     min-height: 50vh;
 }
 
-.newsletter {
-    position: relative;
-}
-
 .newsletter_section p {
     padding: 0 0 2vw 0;
 }
 
 .newsletter_input {
     width: 30%;
-    z-index: -1;
-    padding: 1.4rem;
-    border-radius: 1rem;
-}
-
-.nesletter_button {
-    position: absolute;
-    top: 40px;
-    left: 50px;
 }
 
 /* Footer */
@@ -553,17 +517,12 @@ nav ul li a {
     position: relative;
     font-size: var(--small-text);
     justify-content: center;
-    transition: all .3s ease;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
     padding: 0 3rem;
-}
-
-.footer a {
-    font-size: var(--normal-text);
 }
 
 .footer_brand {
@@ -638,61 +597,28 @@ nav ul li a {
         --small-text: 1rem;
     }
 
-    .swiper_section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20vh 0;
-    }
-
-    .home {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
+    .logo {
+        width: 24px;
     }
 
     .swiper_img {
-        animation-name: floating;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
+        width: 35%;
+    }
+
+    .categories_section {
+        padding: 3rem 0;
+    }
+
+    .category {
         width: 30%;
     }
 
-    .swiper_text {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        justify-content: center;
+    .about_text {
+        width: 50%;
     }
 
-    .swiper_text .paragraph {
-        padding: 0 0 1rem 0;
-    }
-
-    .swiper_img {
-        display: flex;
-        width: 32vw;
-        /* filter: drop-shadow(0 0 4rem var(--main-color)); */
-        padding-right: 2rem;
-    }
-
-    .swiper_buttons {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .link_button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .link_button p {
-        padding: 0 0.5rem 0 0;
+    .about_img {
+        width: 35%;
     }
 
     .christmas {
@@ -701,57 +627,24 @@ nav ul li a {
         grid-template-rows: 20rem 20rem;
     }
 
-    .newcomers_section {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 75%;
-        margin: 0 auto;
-    }
-
-    .newcomers_item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: var(--fort-color);
-        width: 100%;
-        margin: 1rem;
-        padding: 2rem;
-        border-radius: 2rem;
-        margin: 3rem auto;
-    }
-
-
-    .discount_section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 70vh;
-        padding: 5vh 0;
-    }
-
     .discount {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: var(--fort-color);
-        width: 55vw;
-        border-radius: 2rem;
-    }
-
-    .discount_img {
-        width: 90%;
-        padding: 1em;
-    }
-
-    .discount_text {
-        padding: 1em;
+        width: 50vw;
     }
 
     .discount_text p {
-        color: var(--text-color-inv);
-        padding: 4vh 4vw;
+        padding: 1vh 1vw;
+    }
+
+    .discount_img {
+        width: 50%;
+    }
+
+    .newcomers_section {
+        width: 75%;
     }
 
     .footer {
@@ -784,6 +677,11 @@ nav ul li a {
         display: flex;
     }
 
+    .button {
+        padding: 0.5rem 1rem;
+        font-size: var(--small-text);
+    }
+
     .h1_text {
         font-size: var(--text-h1);
         text-transform: uppercase;
@@ -814,18 +712,6 @@ nav ul li a {
         margin: 1rem 0;
     }
 
-    .small_text {
-        font-size: var(--small-text);
-    }
-
-    .text_center {
-        text-align: center;
-    }
-
-    .bold {
-        font-weight: 600;
-    }
-
     .home {
         display: flex;
         flex-direction: column-reverse;
@@ -835,14 +721,13 @@ nav ul li a {
     }
 
     .swiper_text {
-        display: flex;
-        flex-direction: column;
         width: 100%;
         height: 50%;
+        padding: 0 1.5vw;
     }
 
     .swiper_text p {
-        padding: 2vh 0;
+        padding: 1vh 0;
     }
 
     .swiper_img {
@@ -854,11 +739,6 @@ nav ul li a {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-    }
-
-    .categories_section {
-        padding: 5vh 0;
-
     }
 
     .categories {
@@ -873,17 +753,7 @@ nav ul li a {
     }
 
     .categories_img {
-        width: 50%;
-        padding: 2rem 0;
-    }
-
-    .button {
-        background-color: var(--main-color);
-        border: none;
-        padding: 2vh 5vw;
-        border-radius: 1rem;
-        font-size: var(--normal-text);
-        cursor: pointer;
+        width: 40%;
     }
 
     .about_section {
@@ -901,15 +771,6 @@ nav ul li a {
 
     .about_img {
         width: 80%;
-        animation-name: floating;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-    }
-
-    .christmas_section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .christmas {
@@ -917,93 +778,44 @@ nav ul li a {
         flex-direction: column;
     }
 
-    .christmas_gift {
-        background: var(--fort-color);
-        border-radius: 2rem;
-        margin: 1.5rem;
-        padding: 0.5rem;
-        color: var(--text-color-inv);
+    .discount_section {
+        margin: 5vh 0;
     }
 
-    .christmas_gift p {
-        color: var(--text-color-inv);
+    .discount {
+        width: 70vw;
     }
 
-    .christmas_img {
-        width: 25vw;
-    }
-
-    .christmas_text {
-        padding: 0 .5rem;
+    .discount_img {
+        width: 70%;
     }
 
     .newcomers_section {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
         width: 90%;
-        margin: 0 auto;
     }
 
     .newcomers_item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: var(--fort-color);
         width: 100%;
-        margin: 1rem;
-        padding: 2rem;
-        border-radius: 2rem;
-        margin: 3rem auto;
     }
 
     .newcomers_img {
-        width: 30vw;
+        width: 25vw;
     }
 
     .newsletter_input {
         width: 100%;
         z-index: -1;
-        padding: 0.75em;
-        border-radius: 1rem;
     }
 
     .newsletter_button {
-        padding: 0.5em;
         margin: 0.5em 0 0 0;
         font-size: var(--small-text);
     }
 
     .footer_section {
-        display: flex;
         flex-direction: column;
         position: relative;
-        font-size: var(--normal-text);
         justify-content: center;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        padding: 0 3rem;
-    }
-
-    .footer_brand {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .footer_logo {
-        margin: 0 1rem;
-    }
-
-    .footer_img_one,
-    .footer_img_two {
-        position: absolute;
-        width: 10rem;
-        z-index: -1;
-        opacity: 0.3;
     }
 
     .footer_img_one {
@@ -1013,24 +825,8 @@ nav ul li a {
 
     .footer_img_two {
         width: 5rem;
-        top: 25rem;
-        right: 4rem;
+        top: 24rem;
+        right: 3rem;
     }
 
-    #copyright {
-        margin: 0 auto;
-        padding: 0 0 1em 0;
-    }
-}
-
-.testing {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.testing img {
-    width: 50%;
 }
